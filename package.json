@@ -1,0 +1,58 @@
+{
+  "name": "envmerge",
+  "version": "1.0.0",
+  "description": "CLI tool to recursively merge multiple .env files into a single consolidated output",
+  "keywords": [
+    "env",
+    "merge",
+    "dotenv",
+    "cli",
+    "config",
+    "environment",
+    "tooling"
+  ],
+  "bin": {
+    "envmerge": "dist/index.js"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "homepage": "https://github.com/Creatoon/envmerge#readme",
+  "bugs": {
+    "url": "https://github.com/Creatoon/envmerge/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Creatoon/envmerge.git"
+  },
+  "license": "MIT",
+  "author": "Creatoon",
+  "main": "dist/index.js",
+  "files": [
+    "dist"
+  ],
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint 'src/**/*.ts'",
+    "validate": "npm run lint",
+    "prebuild": "npm run validate",
+    "build": "tsc",
+    "prepublishOnly": "npm run build",
+    "clean": "rm -rf ./dist"
+  },
+  "devDependencies": {
+    "@types/node": "^22.14.0",
+    "@typescript-eslint/eslint-plugin": "^8.29.0",
+    "@typescript-eslint/parser": "^8.29.0",
+    "eslint": "^9.24.0",
+    "eslint-config-prettier": "^10.1.1",
+    "prettier": "^3.5.3",
+    "typescript": "^5.8.3"
+  },
+  "dependencies": {
+    "chalk": "^5.4.1",
+    "dotenv": "^16.4.7",
+    "ts-command-line-args": "^2.5.1"
+  }
+}
