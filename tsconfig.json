@@ -1,13 +1,13 @@
 {
   "compilerOptions": {
     "target": "ES2020",
-    "module": "NodeNext",
+    "module": "CommonJS",
     "outDir": "./dist",
     "rootDir": "./",
     "strict": true,
     "esModuleInterop": true,
-    "moduleResolution": "nodenext",
-    "types": ["node"]
+    "types": ["node"],
+    "paths": { "rollup/parseAst": ["./node_modules/rollup/dist/parseAst"] }
   },
   "include": ["src", "tests"]
 }
