@@ -1,5 +1,5 @@
 {
-  "name": "envmerge",
+  "name": "@creatoon/envmerge",
   "version": "1.0.0",
   "description": "CLI tool to recursively merge multiple .env files into a single consolidated output",
   "keywords": [
@@ -13,6 +13,9 @@
   ],
   "bin": {
     "envmerge": "dist/index.js"
+  },
+  "publishConfig": {
+    "access": "public"
   },
   "engines": {
     "node": ">=14.0.0"

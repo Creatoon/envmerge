@@ -1,5 +1,10 @@
 # envmerge
 
+[![CI](https://github.com/Creatoon/envmerge/actions/workflows/ci.yml/badge.svg)](https://github.com/Creatoon/envmerge/actions/workflows/ci.yml)
+[![npm version](https://img.shields.io/npm/v/@creatoon/envmerge)](https://www.npmjs.com/package/@creatoon/envmerge)
+
+[![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+
 > 🔧 CLI tool to recursively merge multiple `.env` files into a single consolidated file.
 
 ---
@@ -17,7 +22,11 @@
 ## 📦 Installation
 
 ```bash
-npm install -g envmerge
+npm install -g @creatoon/envmerge
+```
+
+```
+npx @creatoon/envmerge --help
 ```
 
 ---

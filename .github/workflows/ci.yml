@@ -23,11 +23,8 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      # - name: Run build
-      #   run: npm run build
-
-      # - name: Lint code
-      #   run: npm run validate
+      - name: Run build
+        run: npm run build
 
       - name: Run tests
         run: npm run test
@@ -50,8 +47,8 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      # - name: Build project
-      #   run: npm run build
+      - name: Build project
+        run: npm run build
 
       - name: Publish to npm
         run: npm publish --access public
