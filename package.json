@@ -1,6 +1,6 @@
 {
   "name": "@creatoon/envmerge",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "CLI tool to recursively merge multiple .env files into a single consolidated output",
   "keywords": [
     "env",

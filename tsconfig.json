@@ -2,12 +2,14 @@
   "compilerOptions": {
     "target": "ES2020",
     "module": "CommonJS",
-    "outDir": "./dist",
-    "rootDir": "./",
+    "outDir": "dist",
+    // "rootDir": "./",
     "strict": true,
     "esModuleInterop": true,
     "types": ["node"],
-    "paths": { "rollup/parseAst": ["./node_modules/rollup/dist/parseAst"] }
+    "paths": {
+      "rollup/parseAst": ["./node_modules/rollup/dist/parseAst"]
+    }
   },
-  "include": ["src", "tests"]
+  "include": ["types/*.ts", "src/*.ts", "src/**/*.ts"]
 }
